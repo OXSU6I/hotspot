@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>Internet hotspot - Log in</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- two other colors
+
+<body class="lite">
+<body class="dark">
+
+-->
+
+    $(if chap-id)
+    <form name="sendin" action="$(link-login-only)" method="post" style="display:none">
+        <input type="hidden" name="username" />
+        <input type="hidden" name="password" />
+        <input type="hidden" name="dst" value="$(link-orig)" />
+        <input type="hidden" name="popup" value="true" />
+    </form>
+
+    <script src="/md5.js"></script>
+    <script>
+        function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+        }
+
+    </script>
+    $(endif)
+    <div class="ie-fixMinHeight">
+        <div class="main">
+            <div class="wrap animated fadeIn">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 1103.49 501.86" style="enable-background:new 0 0 1103.49 501.86;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#C9D1D9;}
+                    .st1{fill:#C9D1D9;}
+                </style>
+                <g>
+                    <path class="st0" d="M283.74,103.11c-25.68,3.14-52.99,15.5-81.27,36.63c-15.93,11.92-20.37,16.9-8.13,8.89
+                        c46.49-30.13,91.13-39.66,120.83-25.9c12.25,5.74,18.96,13.98,22.32,27.2l1.73,6.94l1.52-5.85c2.28-8.89,1.84-22.11-0.87-28.17
+                        c-4.55-10.08-12.9-15.82-27.2-18.86C306.06,102.57,291.65,102.13,283.74,103.11z"/>
+                    <path class="st0" d="M229.81,337.11c9.26-6.92,19-15.37,19.51-15.81c5.93-5.16,15.18-13.25,26.01-25.12
+                        c7.29-7.99,12.61-14.53,14.93-17.8c3.77-5.31,7.55-10.62,11.32-15.94c3.65-6.19,7.3-12.39,10.95-18.58
+                        c5.24-8.9,8.71-16.16,12.41-26.05c3.09-8.25,5.97-15.97,7.13-26.69c1-9.24,1.92-17.74-1.85-27.72
+                        c-5.99-15.87-19.23-23.28-21.76-24.64c0,0-13.58-7.28-29.69-5c-1.23,0.18-5.49,0.78-5.48,1.46c0.01,0.41,1.66,0.78,4.93,1.15
+                        c11.92,1.19,22.54,9.54,26.44,20.7c2.93,8.45,2.49,24.49-1.19,36.95c-3.58,12.03-14.63,34.78-22.86,47.14
+                        c-20.59,30.56-53.75,62.09-83.98,79.97c-23.19,13.65-43.35,20.16-60.68,19.51c-16.47-0.76-26.12-6.5-31.64-18.96
+                        c-4.01-9.1-3.58-28.07,0.87-40.75c2.17-6.18,1.08-6.18-1.73,0c-16.04,35.22-18.96,59.06-9.75,77.16c2.49,4.94,5.59,8.91,9.45,11.97
+                        c7.54,5.98,17.03,8.33,29.56,8.07C176.14,377.25,217.15,346.58,229.81,337.11z"/>
+                    <path class="st0" d="M181.44,164.23c-23.95,3.03-43.56,15.06-51.26,31.21c-2.82,6.07-3.47,8.78-3.9,17.56
+                        c-0.43,9.43-0.22,11.05,2.17,16.25c4.98,10.84,14.95,17.88,29.58,21.02c5.96,1.3,16.69,1.63,50.93,1.52h43.35l3.9-5.09
+                        c7.26-9.43,16.15-22.11,16.15-23.08c0-0.54-21.89-1.08-48.66-1.19c-46.05-0.33-48.76-0.43-50.93-2.38
+                        c-3.47-3.14-3.03-9.43,0.87-13.87l3.14-3.58l53.86-0.33l53.75-0.33l2.17-5.09c3.03-6.94,7.04-21.24,8.02-28.17l0.76-5.63
+                        l-53.53,0.11C212.43,163.25,185.23,163.69,181.44,164.23z"/>
+                    <path class="st0" d="M121.95,292.1c-9.64,10.29-17.56,18.96-17.56,19.29s17.66,0.43,39.23,0.11l39.34-0.54l8.13-5.31
+                        c14.09-9.21,39.01-29.15,39.01-31.21c0-0.54-20.37-0.87-45.3-0.87h-45.3L121.95,292.1z"/>
+                </g>
+                <path class="st0" d="M683.85,330.64"/>
+                <g>
+                    <g>
+                        <path class="st1" d="M428.26,231.74c20.1,0,30.95,7.8,30.95,23.4c0,17.52-10.23,28-35.39,28h-76.83l16.4-21.99h62.4
+                            c6.04,0,8.76-1.79,8.76-6.27c0-4.35-2.71-6.14-8.76-6.14H380.9c-21.21,0-30.95-9.85-30.95-24.55c0-16.11,10.36-26.6,35.39-26.6
+                            h71.65l-16.4,22.25h-57.22c-5.92,0-8.76,1.53-8.76,5.88s2.84,6.01,8.76,6.01H428.26z"/>
+                        <path class="st1" d="M574.64,283.14h-38.6l-24.91-22.5c-8.51-7.67-12.46-11.38-15.29-14.32c0.12,3.96,0.37,8.18,0.37,12.28v24.55
+                            h-25.65V197.6h25.65v19.82c0,5.24-0.25,10.49-0.49,14.96c3.21-3.07,7.65-7.42,15.17-13.94l23.8-20.84h37l-31.57,24.55
+                            c-10.97,8.57-16.03,12.4-21.33,15.73c4.69,3.32,11.1,8.06,21.7,17.01L574.64,283.14z"/>
+                        <path class="st1" d="M701.17,197.6l-48.96,57.28v28.26h-25.65v-28.39l-50.31-57.16h32.8l19.73,23.78
+                            c2.59,3.07,9.5,10.87,11.22,13.43c1.6-2.43,4.44-6.14,10.36-13.55l18.74-23.65H701.17z"/>
+                        <path class="st1" d="M914.27,261.15l-16.4,21.99h-79.42V197.6h95.57l-16.52,22.25h-53.4v10.23h65.36l-14.67,19.44H844.1v11.64
+                            H914.27z"/>
+                        <path class="st1" d="M1025.5,197.6l-16.52,22.25h-29.47v63.29h-25.53v-63.29h-38.72l16.52-22.25H1025.5z"/>
+                    </g>
+                    <g>
+                        <path class="st1" d="M803.01,197.6v85.54h-25.19l-33.32-39.87c-2.85-3.52-5.25-6.58-7.22-9.17c-1.97-2.59-3.89-5.52-5.75-8.78
+                            v57.82h-22.57V197.6h24.86l36.28,43.83c0.44,0.53,1.42,1.74,2.95,3.63c1.53,1.89,2.93,3.68,4.18,5.35c1.26,1.67,2.33,3.3,3.2,4.88
+                            V197.6H803.01z"/>
+                    </g>
+                </g>
+                </svg>
+                
+                <h2>Internet Access</h2>
+                <form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()"
+                    $(endif)>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+                    <input type="hidden" name="popup" value="true" />
+                    <label>Username</label>
+                    <input name="username" type="text" value="$(username)"/>
+                    <label>Password</label>
+                    <input name="password" type="password" />
+                    <div class="submit">
+                        <input type="submit" value="Confirm" />
+                    </div>
+                </form>
+                <p class="info $(if error)alert$(endif)">
+                    $(if error == "") $(if trial == 'yes') <span lang="rel">استخدام 15 دقيقة مجانية</span> <br> <a class="trial"
+                        href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">استخدام</a> <br>
+                        $(endif)$(endif)
+                        $(if error)$(error)$(endif)
+                </p>
+                <p class="info bt">Created by Skynet</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
